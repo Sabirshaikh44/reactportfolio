@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Mono:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+:root {
+  --thick-font: "Smooch Sans", sans-serif;
+  --accent-bg-color: #0a192f;
+  --accent--font: "Smooch Sans", sans-serif;
+  --thick-font: "Black Han Sans", sans-serif;
+  --mono-font: "Roboto Mono", monospace;
+  --sans-font: "Open Sans", sans-serif;
+  --accent-greenish-touch: #64ffda;
+  --light-text-accent-touch: #ccd6f6;
+  --slaty-text-accent-touch: #8892b0;
+  --accmargin: 1.25rem;
+  --descentmargin: 0.625rem;
+  --descentlineheight: 0.9;
+  --acc-sm-fontsize: 1.25rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--accent-bg-color);
+}
+.footer p{
+    color: var(--slaty-text-accent-touch);
+    font-family: var(--mono-font);
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--accent-greenish-touch);
+}
+
+.footer-icon-container{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--slaty-text-accent-touch);
+    cursor: pointer;
+
+}
+.footer-icons{
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    transition: .3s ease-in;
+}
+.footer-icons a{
+  text-decoration: none;
+  color: var(--slaty-text-accent-touch);
+  transition: .3s ease-in;
+}
+.footer-icons a:hover{
+    color: var(--accent-greenish-touch);
+}

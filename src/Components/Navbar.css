@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap");
+:root {
+  --navy: #0a192f;
+  --nav--font: "Smooch Sans", sans-serif;
+  --accent-greenish-touch: #64ffda;
+  --light-text-accent-touch: #ccd6f6;
+  --slaty-text-accent-touch: #8892b0;
+}
+.Navbar {
+  padding: 1.5rem 2rem;
+  background: var(--navy);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: var(--nav--font);
+  position: relative;
+}
+
+.logo-text {
+  font-size: 2rem;
+  color: var(--slaty-text-accent-touch);
+  font-family: var(--nav--font);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.logo-text .greenish-logo-text{
+  color: var(--accent-greenish-touch);
+}
+.nav-links {
+  flex-basis: 85%;
+  color: var(--accent-greenish-touch);
+}
+.nav-links ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-links ul li {
+  list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-right: 3rem;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: var(--accent-greenish-touch);
+}
+.nav-links a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.nav-links a.resume-btn li {
+  border: 1px solid var(--accent-greenish-touch);
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  color: #64ffda;
+  margin-right: 0rem !important;
+}
+.nav-links button:hover {
+  opacity: 0.9;
+  background: #64ffdb25;
+  cursor: pointer;
+}
+.hamburger-btn {
+  display: none;
+  color: var(--accent-greenish-touch);
+  font-size: 1.5rem;
+  transition: .3s ease-in;
+}
+@media screen and (max-width: 40rem) {
+  .Navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo-sec {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .logo-text {
+    flex-basis: -6%;
+  }
+  .hamburger-btn{
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav-links{
+      display: none;
+  }
+  .mobile-nav-links {
+      display: block;
+      transition: 3s ease-in;
+  }
+  .mobile-nav-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 0.44rem;
+     
+  }
+  .mobile-nav-links ul > li , button{
+      margin-top: 0.6rem;
+  }
+  .nav-links a.resume-btn li{
+    margin-top: 1rem;
+  }
+}

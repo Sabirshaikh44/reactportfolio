@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Space+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Mono:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --accent-bg-color: #0a192f;
+  --accent--font: "Smooch Sans", sans-serif;
+  --thick-font :  "Black Han Sans", sans-serif;
+  --mono-font : 'Roboto Mono', monospace;
+  --sans-font: 'Open Sans', sans-serif;
+  --accent-greenish-touch: #64ffda;
+  --light-text-accent-touch : #ccd6f6;
+  --slaty-text-accent-touch : #8892b0;
+  --accmargin: 1.25rem;
+  --descentmargin : 0.625rem;
+  --descentlineheight :  0.9;
+  --acc-sm-fontsize : 1.25rem;
+   
+}
+.Hero{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: var(--accent-bg-color);
+    font-family: var(--accent--font);
+    height: 100vh;
+    min-height: 100vh;
+    padding: 5rem 15rem;
+    
+}
+.hero-greenish1-textsm,.hero-grey2thick-textlg,.hero-light3grey-textlg,.hero-para4,.hero-para-greenhighlightedtext,.hero-moreabout-btn {
+    margin-top: var(--descentmargin);
+    line-height: 1.1;
+}
+.hero-greenish1-textsm{
+    color: var(--accent-greenish-touch);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.hero-grey2thick-textlg{
+  font-size: 5rem;
+  color: var(--light-text-accent-touch);
+  font-family: var(--sans-font);
+  margin-top: var(--descentmargin);
+}
+.hero-light3grey-textlg{
+    color: var(--slaty-text-accent-touch);
+    font-size: 5rem;
+    font-family: var(--sans-font);
+    font-weight: 700;
+}
+.hero-para4{
+    max-width: 33.75rem;
+    color: var(--slaty-text-accent-touch);
+    font-size: 1.077rem;
+    font-family: var(--sans-font);
+    margin-top: var(--accmargin);
+    word-spacing: 0.2rem;
+    line-height: 1.3;
+}
+.hero-para-greenhighlightedtext{
+    color: var(--accent-greenish-touch);
+}
+.hero-moreabout-btn {
+    margin-top: 3.125rem;
+    font-size: 0.875rem;
+    padding: 1.25rem 1.75rem;
+    border: 1px solid var(--accent-greenish-touch);
+    color: var(--accent-greenish-touch);
+    border-radius: 4px;
+    font-family: var(--mono-font);
+    transition: 0.3s all;
+}
+.hero-moreabout-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.hero-moreabout-btn{
+    text-decoration: none;
+    color: var(--accent-greenish-touch);
+}
+@media  screen and (max-width: 40rem) {
+    .Hero{
+        padding: 4rem 1.5rem;
+        justify-content: center;
+        
+    }
+    
+    .hero-grey2thick-textlg,.hero-light3grey-textlg {
+        font-size: 2.5rem;
+    }
+    .hero-para4{
+        font-size: 0.9rem;
+    }
+}
+/* tablets */
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+    .Hero{
+      padding: 4rem 3rem;
+      justify-content: center;
+    }
+    .hero-para4 {
+        font-size: 1.25rem;
+    }
+   }
